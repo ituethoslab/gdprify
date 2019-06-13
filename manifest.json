@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "GDPRify",
+    "description": "Turn any cookie thing to deletion poetry. GDPR = Generic Deletion Poetry Reading.",
+    "author": "Mace Ojala",
+    "content_scripts": [
+	{
+	    "matches": ["*://*/*cookie*"],
+	    "js": ["gdprify.js"]
+	}
+    ]
+}
